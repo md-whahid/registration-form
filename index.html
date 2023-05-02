@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="css_font/all.css" />
+		<link rel="stylesheet" href="css_font/all.min.css" />
+		<link rel="stylesheet" href="css_font/fontawesome.min.css" />
+		<title>Fill up the FORM</title>
+	</head>
+	<body>
+		<div class="main-div main-center">
+			<div class="empty"></div>
+			<div class="container">
+				<div class="title">
+					<h2>Midjourney AI</h2>
+				</div>
+				<form action="" class="form" id="form">
+					<div class="field">
+						<label for="name">Name: </label>
+						<input
+							type="text"
+							name="name"
+							id="name"
+							placeholder="Input your name..."
+							required
+						/>
+						<i class="fa-solid fa-circle-check"></i>
+						<i class="fa-solid fa-circle-exclamation"></i>
+					</div>
+					<div class="field">
+						<label for="email">Email: </label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Input your E-mail..."
+							required
+						/>
+						<i class="fa-solid fa-circle-check"></i>
+						<i class="fa-solid fa-circle-exclamation"></i>
+					</div>
+					<div class="field">
+						<label for="phone">Phone: </label>
+						<input
+							type="number"
+							name="phone"
+							id="phone"
+							placeholder="Input your Phone Number..."
+							required
+						/>
+						<i class="fa-solid fa-circle-check"></i>
+						<i class="fa-solid fa-circle-exclamation"></i>
+					</div>
+					<div class="field">
+						<label for="password">Password: </label>
+						<input
+							type="password"
+							name="password"
+							id="password"
+							placeholder="Input your password..."
+							onkeyup="checkPassword(this.value)"
+							required
+						/>
+						<i class="fa-solid i-eye fa-eye"></i>
+						<i class="fa-solid fa-circle-check"></i>
+						<i class="fa-solid fa-circle-exclamation"></i>
+
+						<div class="requerments">
+							<p class="line-of">
+								<i class="fa-solid fa-fill"></i>
+								Your <strong> pasword </strong>must fullfill this requerments.
+							</p>
+							<p id="number">
+								<i class="fa-regular fa-square"></i>
+								At least 1 <strong> number </strong>( 0 ... 9 )
+							</p>
+							<p id="special">
+								<i class="fa-regular fa-square"></i>
+								At least 1 <strong> special character </strong>( ! ... $ )
+							</p>
+							<p id="uppercase">
+								<i class="fa-regular fa-square"></i>
+								At least 1 <strong> uppercase letter </strong>( A ... Z )
+							</p>
+							<p id="lowercase">
+								<i class="fa-regular fa-square"></i>
+								At least 1<strong> lowercase letter </strong>( a ... z )
+							</p>
+							<p id="length">
+								<i class="fa-regular fa-square"></i>
+								At least <strong> 12 characters </strong> long.
+							</p>
+						</div>
+					</div>
+					<div class="field">
+						<label for="cPassword">Confirm Pasword: </label>
+						<input
+							type="password"
+							name="cPassword"
+							id="cPassword"
+							placeholder="Confirm your password..."
+							required
+						/>
+						<i class="fa-solid i-ceye fa-eye"></i>
+						<i class="fa-solid fa-circle-check"></i>
+						<i class="fa-solid fa-circle-exclamation"></i>
+					</div>
+					<input type="submit" value="Submit" class="submit" />
+				</form>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>

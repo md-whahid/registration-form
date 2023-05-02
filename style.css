@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: "Poppins", sans-serif;
+}
+:root {
+	--blue: rgb(42, 149, 233);
+	--a-blue: rgba(42, 149, 233, 0.7);
+	--non-white: rgb(226, 231, 250);
+	--a-non-white: rgba(255, 255, 255, 0.1);
+}
+body {
+	background-image: url(img/bacbon.jpg);
+	background-size: cover;
+	height: 100vh;
+	background-repeat: no-repeat;
+}
+.main-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.main-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.empty {
+	background-image: url(img/bacon.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 650px;
+	width: 300px;
+	background-color: rgb(85, 54, 13);
+	border-radius: 25px 0 0 25px;
+}
+.container {
+	background: transparent;
+	background-color: var(--a-non-white);
+	padding: 10px;
+	border-radius: 0 25px 25px 0;
+	width: 450px;
+	height: 650px;
+	box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(7px);
+}
+
+.field {
+	margin: 5px;
+	outline: none;
+}
+/* ===============================================
+=============================================== */
+
+.title h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 32px;
+}
+.form div label {
+	color: black;
+	display: block;
+	font-size: 20px;
+}
+.form div input {
+	background: transparent;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #fff;
+	width: 100%;
+	font-size: 20px;
+}
+.fa-eye {
+	position: absolute;
+	transform: translate(-270%, 50%);
+	-ms-transform: translate(-270%, 50%);
+	color: #000;
+	cursor: pointer;
+}
+.fa-eye-slash {
+	position: absolute;
+	transform: translate(-250%, 50%);
+	-ms-transform: translate(-250%, 50%);
+	color: #000;
+	cursor: pointer;
+}
+.fa-circle-check,
+.fa-circle-exclamation {
+	position: absolute;
+	transform: translate(-150%, 50%);
+	-ms-transform: translate(-150%, 50%);
+	color: #000;
+	visibility: hidden;
+}
+.form div input:hover {
+	border-bottom: 2px solid #cf2c7b;
+	transition: all 0.3s ease;
+}
+.requerments {
+	margin-top: 10px;
+}
+.submit {
+	background-color: #ce4788;
+	font-weight: bold;
+	color: #000;
+	width: 100%;
+	height: 40px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	border-radius: 25px;
+	margin-top: 15px;
+}
+.submit:hover {
+	background-color: #cf2c7b;
+	transition: all 0.3s ease;
+}
+.valid {
+	color: rgba(0, 0, 0, 0.5);
+}
